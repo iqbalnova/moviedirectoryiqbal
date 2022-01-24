@@ -11,9 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Utsfilmiqbal">
-        <activity android:name=".AboutMe"></activity>
+        <activity android:name=".Register"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AboutMe" />
         <activity android:name=".Detail" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

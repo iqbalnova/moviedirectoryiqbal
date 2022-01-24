@@ -10,4 +10,9 @@
         android:title="About Me"
         android:icon="@drawable/ic_about"/>
 
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_baseline_lock_open_24"/>
+
 </menu>

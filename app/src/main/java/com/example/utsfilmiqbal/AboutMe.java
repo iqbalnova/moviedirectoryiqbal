@@ -29,6 +29,11 @@ public class AboutMe extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         overridePendingTransition(0,0);
                         return true;
+
+                    case R.id.logout:
+                        startActivity(new Intent(getApplicationContext(),Login.class));
+                        overridePendingTransition(0,0);
+                        return true;
                 }
                 return false;
             }

@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         recyclerView = findViewById(R.id.recyclerview);
+        recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         requestQueue = RequestAPI.getmInstance(this).getRequestQueue();
@@ -50,6 +51,11 @@ public class MainActivity extends AppCompatActivity {
                 switch(item.getItemId()){
                     case R.id.about:
                         startActivity(new Intent(getApplicationContext(),AboutMe.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.logout:
+                        startActivity(new Intent(getApplicationContext(),Login.class));
                         overridePendingTransition(0,0);
                         return true;
 
